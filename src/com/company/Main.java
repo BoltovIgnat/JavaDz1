@@ -4,12 +4,62 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        printThreeWords();
-        checkSumSign();
-        printColor();
-        compareNumbers();
+        int a =5;
+        int b =5;
+
+        checkSum(a,b);
+        checkPositive(a);
+        boolean res = checkNegative(a);
+        System.out.println(res);
+        printString("ibc here!", a);
+        isLeapYear(2022);
     }
-     public static void printThreeWords() {
+
+    //////////////////////////////////////
+    // lesson 2
+    public static boolean checkSum(int a,int b) {
+        if (a+b>10 && a+b<=20){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public static void checkPositive(int a) {
+        if (a>=0){
+            System.out.println("Is Positive");
+        }else{
+            System.out.println("Isn't Positive");
+        }
+    }
+
+    public static boolean checkNegative(int a) {
+        if (a<0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public static void printString(String str,int a) {
+        for (int life = a; life >= 1; life--)
+            System.out.println("String");
+    }
+
+    public static void isLeapYear(int year) {
+        if((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+        {
+            System.out.println(year +"is a leap year.");
+        }
+        else
+        {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+
+    //////////////////////////////////////
+    // lesson 1
+    public static void printThreeWords() {
          System.out.println("Orange");
          System.out.println("Banana");
          System.out.println("Apple");
@@ -40,6 +90,7 @@ public class Main {
         int a = 5;
         int b = 10;
         if (a >= b){
+
             System.out.println("a >= b");
         }else{
             System.out.println("a < b");
