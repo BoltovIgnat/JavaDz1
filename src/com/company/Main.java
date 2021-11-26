@@ -40,8 +40,8 @@ public class Main {
         System.out.println("Собака пытается выполнить jump(" + distance + "). Результат: " + dog.jump(distance));
         System.out.println("\n****************\n");
 
-        System.out.println("Кошка может проплыть: " + cat.getAnimalDistanceSwim() +
-                " м. \nСобака может проплыть: " + dog.getAnimalDistanceSwim() + " м.");
+        System.out.println(cat.getAnimalDistanceSwim());
+        System.out.println("\nСобака может проплыть: " + dog.getAnimalDistanceSwim() + " м.");
 
         System.out.println("Введите дистанцию для плавания:");
         distance = scanner.nextDouble();
